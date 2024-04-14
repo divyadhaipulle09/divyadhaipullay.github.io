@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Divya Dhaipullay Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-family: 'Times New Roman', Times, serif; /* Set font family to Times New Roman */
+  font-size: 25px;
+  font-weight: bold;
+  color: #333; /* Change font color to dark gray */
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Divya Dhaipullay </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading" style="text-transform: none;">Hi there! Welcome to my portfolio</span>
+
+			            <h1 class="mb-4 mt-3">I'm <span>Divya Dhaipullay </span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						  { text: 'Data Scientist', font: 'Times New Roman' },
+						  { text: 'Machine Learning Engineer', font: 'Times New Roman' },
+						  { text: 'AI Researcher', font: 'Times New Roman' },
+						  { text: 'Computer Vision Engineer', font: 'Times New Roman' },
+						  { text: 'Natural Language Processing Engineer', font: 'Times New Roman' }
+						];
+
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(textObj) {
+						  const { text, font } = textObj;
+						  // Set the font style
+						  typingAnimationElement.style.fontFamily = font;
+						  typingAnimationElement.style.color = 'white'; // Change text color to white
+
+						  // Loop through each character and add it to the element
+						  for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							  typingAnimationElement.textContent += text[i];
+							}, i * 50); // Increase the delay to slow down the typing animation
+						  }
+
+						  // Once the animation is complete, reset the text and start over
+						  setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							const nextIndex = (typingTexts.indexOf(textObj) + 1) % typingTexts.length;
+							playTypingAnimation(typingTexts[nextIndex]);
+						  }, text.length * 50);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+
+						</script>
+
+
+						<br>
+						<br>
+			            <h2>Data Science Graduate</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 4 years of Work Experience and 1 year of Research Experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://medium.com/@divyadhaipulle" class="btn btn-primary py-3 px-4">Medium</a> 
+							<a href="https://github.com/divyadhaipulle09" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Divya Dhaipullay</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Looking for Full-Time Roles starting May 2024</span></p>
+										<p><span class="title-s">Work Experience: </span> <span>4 years</span></p>
+										<p><span class="title-s">Research Experience: </span> <span>1 year</span></p>
+										<p><span class="title-s">Address: </span> <span>Bloomington, Indiana</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">82%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>								
+							
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>High performance Computing Systems (BigRed 200, Slate) </span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>In my academic and professional journey, I've immersed myself in cutting-edge research and hands-on
+								projects, from implementing advanced deep learning algorithms to collaborating on ML-driven solutions 
+								for real-world challenges spanning diverse domains such as cognitive science, computational biology, 
+								and autonomous robotics, I'm driven by a passion for innovation and a commitment 
+								to pushing the boundaries of technology. As a lifelong learner and aspiring data scientist, 
+								I thrive on tackling complex problems and contributing to the forefront of scientific discovery.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Interests:</span> <span>Writing blogs, Teaching, Surfing the Web</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/divya-dhaipulle/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+	<section id="skills">
+		<h3>Skills</h3>
+	</section>
+
+	<section id="skills">
+		
+		<div class="skill-group">
+        <h3>Programming Languages</h3>
+        <div class="skill" title="Python Programming">
+            <img src="images/python.svg" alt="Python Logo" class="logo">
+            <p>Python Programming</p>
+        </div>
+	<div class="skill" title="Data Analysis with R">
+        
+		<img src="images\R.svg" alt="R Programming" class="logo">
+		<p>Data Analysis with R</p>
+	  </div>
+        <div class="skill" title="SQL Databases">
+            <img src="images/MySQL-Logo.wine.svg" alt="SQL Logo" class="logo">
+            <p>SQL Databases</p>
+        </div>
+        <div class="skill" title="Programming in C">
+            <img src="images/c.svg" alt="C Programming" class="logo">
+            <p>Programming in C</p>
+        </div>
+        <div class="skill" title="Programming in Java">
+            <img src="images/java.svg" alt="Java Logo" class="logo">
+            <p>Programming in Java</p>
+        </div>
+    </div>
+
+    <div class="skill-group">
+        <h3>Data Analysis and Visualization</h3>
+        <div class="skill" title="Data Analysis with NumPy">
+            <img src="images/numpy.svg" alt="NumPy Logo" class="logo">
+            <p>Data Analysis with NumPy</p>
+        </div>
+		<div class="skill">
+		<img src="images/pandas.svg" alt="Pandas Logo" class="logo">
+		<p>Data Manipulation with Pandas</p>
+	</div>
+        <div class="skill" title="Data Visualization with Matplotlib">
+            <img src="images/matplotlib.svg" alt="Matplotlib Logo" class="logo">
+            <p>Data Visualization with Matplotlib</p>
+        </div>
+        <div class="skill" title="Interactive Visualization with Plotly">
+            <img src="images/Plotly.png" alt="Plotly Logo" class="logo">
+            <p>Interactive Visualization with Plotly</p>
+        </div>
+        <div class="skill" title="Interactive Visualization with Bokeh">
+            <img src="images/bokeh png.png" alt="Bokeh Logo" class="logo">
+            <p>Interactive Visualization with Bokeh</p>
+        </div>
+        <div class="skill" title="Declarative Visualization with Altair">
+            <img src="images/altair.png" alt="Altair Logo" class="logo">
+            <p>Declarative Visualization with Altair</p>
+        </div>
+        <div class="skill" title="Graph Visualization with Gephi">
+            <img src="images/gephi.png" alt="Gephi Logo" class="logo">
+            <p>Graph Visualization with Gephi</p>
+        </div>
+        <div class="skill" title="Data Visualization with Power BI">
+            <img src="images/PowerBI.svg" alt="PowerBI Logo" class="logo">
+            <p>Data Visualization with Power BI</p>
+        </div>
+    </div>
+
+    <div class="skill-group">
+        <h3>Machine Learning Frameworks</h3>
+        <div class="skill" title="Deep Learning with Keras">
+            <img src="images/keras.svg" alt="Keras Logo" class="logo">
+            <p>Deep Learning with Keras</p>
+        </div>
+        <div class="skill" title="Deep Learning with PyTorch">
+            <img src="images/pytorch-seeklogo.svg" alt="PyTorch Logo" class="logo">
+            <p>Deep Learning with PyTorch</p>
+        </div>
+        <div class="skill" title="Deep Learning with TensorFlow">
+            <img src="images/tensorflow.svg" alt="TensorFlow Logo" class="logo">
+            <p>Deep Learning with TensorFlow</p>
+        </div>
+		<div class="skill">
+		<img src="images/hugging-face.svg" alt="Hugging Face Logo" class="logo">
+		<p>Natural Language Processing with Hugging Face</p>
+	</div>
+        <div class="skill" title="Machine Learning with scikit-learn">
+            <img src="images/scikit-learn.svg" alt="scikit-learn Logo" class="logo">
+            <p>Machine Learning with scikit-learn</p>
+        </div>
+        <div class="skill" title="Natural Language Processing with NLTK">
+            <img src="images/nltk.png" alt="NLTK Logo" class="logo">
+            <p>Natural Language Processing with NLTK</p>
+        </div>
+        <div class="skill" title="Topic Modeling with Gensim">
+            <img src="images/gensim.png" alt="Gensim Logo" class="logo">
+            <p>Topic Modeling with Gensim</p>
+        </div>
+        <div class="skill" title="Network Analysis with NetworkX">
+            <img src="images/networkx.png" alt="networkx Logo" class="logo">
+            <p>Network Analysis with NetworkX</p>
+        </div>
+    </div>
+
+    <div class="skill-group">
+        <h3>Tools and Libraries</h3>
+        <div class="skill" title="Version Control with GitHub">
+            <img src="images/github.svg" alt="GitHub Logo" class="logo">
+            <p>Version Control with GitHub</p>
+        </div>
+        <div class="skill" title="Hyperparameter Optimization with Optuna">
+            <img src="images/optuna.png" alt="Optuna Logo" class="logo">
+            <p>Hyperparameter Optimization with Optuna</p>
+        </div>
+        <div class="skill" title="Hyperparameter Optimization with Keras Tuner">
+            <img src="images/kerastuner.jpg" alt="Keras Tuner Logo" class="logo">
+            <p>Hyperparameter Optimization with Keras Tuner</p>
+        </div>
+
+        <div class="skill" title="Hyperparameter Optimization with Ray Tune">
+            <img src="images/raytune.png" alt="Ray Tune Logo" class="logo">
+            <p>Hyperparameter Optimization with Ray Tune</p>
+        </div>
+        <div class="skill" title="Scientific Computing with SciPy">
+            <img src="images/scipy.svg" alt="SciPy Logo" class="logo">
+            <p>Scientific Computing with SciPy</p>
+        </div>
+        <div class="skill" title="Scientific Computing with spaCy">
+            <img src="images/spaCy.svg" alt="spaCy Logo" class="logo">
+            <p>Scientific Computing with spaCy</p>
+        </div>
+
+    </div>
+	<div class="skill-group">
+    <h3>Cloud Platforms</h3>
+    <div class="skill" title="Google Cloud AI Platform">
+        <img src="images/GCP.svg" alt="Google Cloud" class="logo">
+        <p>Google Cloud AI Platform</p>
+    </div>
+    <!-- Add any other cloud platform skills here -->
+</div>
+</section>
+
+<section id="skills">
+		<h3>Associations</h3>
+</section>
+
+
+<section id="associations">
+    <div class="associations-container">
+        <div class="associations-group">
+            <h3 style="color: black;">Career</h3>
+            <div class="associations-icons">
+                <div class="associations" title="Tata Elxsi">
+                    <img src="images/TATAELXSI.NS_BIG.svg" alt="Tata Elxsi" class="logo">
+                    <p>Employee</p>
+                </div>
+                <div class="associations" title="Caterpillar">
+                    <img src="images/Caterpillar_Inc.-Logo.wine.svg" alt="Caterpillar.Inc" class="logo">
+                    <p>Client</p>
+                </div>
+                <div class="associations" title="Jaguar">
+                    <img src="images/jaguar.svg" alt="Jaguar" class="logo">
+                    <p>Client</p>
+                </div>
+                <div class="associations" title="Land Rover">
+                    <img src="images/Land_Rover-Logo.wine.svg" alt="Land Rover" class="logo">
+                    <p>Client</p>
+                </div>
+                <div class="associations" title="DRDO">
+                    <img src="images/drdo.svg" alt="DRDO" class="logo">
+                    <p>Contract</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="associations-group">
+            <h3 style="color: black;">Education</h3>
+            <div class="associations-icons">
+                <div class="associations" title="Indiana Univerisity">
+                    <img src="images/IUB.jpg" alt="Indiana Univerisity" class="logo">
+                    <p>Masters in Data Science</p>
+                </div>
+                <div class="associations">
+                    <img src="images/UTA.png" alt="Univerity of Texas at Austin" class="logo">
+                    <p>Post-Graduate Program in Machine Learning</p>
+                </div>
+                <div class="associations" title="Visveswaraya Technological University">
+                    <img src="images/VTU.png" alt="Visveswaraya Technological University Logo" class="logo">
+                    <p>Bachelors in Electronics and Communication Engineering</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="associations-group">
+            <h3 style="color: black;">Research</h3>
+            <div class="associations-icons">
+                <div class="associations" title="IEEE">
+                    <img src="images/ieee.png" alt="IEEE" class="logo">
+                    <p>IEEE RAS Summer School</p>
+                </div>
+                <div class="associations">
+                    <img src="images/nma.png" alt="Neuromatch Academy" class="logo">
+                    <p>Deep Learning Researcher</p>
+                </div>
+                <div class="associations">
+                    <img src="images/Medium.svg" alt="Medium" class="logo">
+                    <p>NLP and Deep Learning Content Writer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p> With proven expertise in data science, statistical analysis, machine learning algorithms, and project management, 
+I excel in driving data-driven insights and delivering impactful solutions to complex challenges.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Work Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate"> 
+            <span class="date">December 2021 - July 2022</span>
+            <h2>Junior Data Science Engineer</h2>
+            <span class="position">Tata Elxsi, Bangalore, India</span>
+            <p class="mt-4">
+                <ul>
+                    <li>Built a model to detect faces, recognize and classify them using CNN and VGG-Face, and calculate the distance between them.</li>
+                    <li>Built an ML model to identify the potential customers to churn, using Gradient boost, XGBoost, and Random Forest to understand the pinpoints and patterns of customer churn. </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">July 2019 - December 2021</span>
+            <h2>Data Analyst</h2>
+            <span class="position">Caterpillar Inc. (Client), Bangalore, India</span>
+            <p class="mt-4">Created a high-performance Power BI dashboard, consolidating 20 release operations into a single 
+            interface. Demonstrated proficiency in data fetching, processing, and prediction using Supervised Learning 
+            algorithms. Derived insights, plotted distributions.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">May 2018 - August 2019</span>
+            <h2>Lead Component Engineer</h2>
+            <span class="position">Jaguar Land Rover (Client), Bangalore, India</span>
+            <p class="mt-4">
+            Led PMST activities for JLR vehicle programs, focusing on Hardware Components like Antenna/PIVI (Infotainment). Directed Requirements Management (RMDV), DOORS, RTC tools, Circuit Audit, Cost & PACN Management, WERS releases, Support plans, and Bill of Materials.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+            <span class="date">September 2018 - May 2019</span>
+            <h2>Integration Test Engineer (Contract)</h2>
+            <span class="position">Defense Research Development Organization (DRDO), Bangalore, India</span>
+            <p class="mt-4">
+            Utilized P1015 Processor and A3PE3000L FPGA, scripting in C and Python for LDRA automation. Executed tests, verified results manually, and generated Test Case reports. Analyzed failures, debugged scripts, and visualized data using Matplotlib and NumPy.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+		<br>
+		<br>
+		<div class="row">
+					<h1 class="big-4">Research Experience</h1>
+					<div class="underline"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">June 2023 - Present</span>
+							<h2>Graduate Researcher - Cognitive Science</h2>
+							<span class="position">Luddy School of Informatics, Computing, and Engineering, Indiana University</span>
+							<p class="mt-4">
+								Under Prof. Zoran Tiganj, implemented Deep Learning algorithms (DenseNet, Beta VAE, ResNeT) and Hugging Face Transformers for precise MDS coordinate prediction in rock image categorization and memory recognition.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">August 2023 - December 2023</span>
+							<h2>Graduate Researcher - Computational Biology</h2>
+							<span class="position">Luddy School of Informatics, Computing, and Engineering, Indiana University</span>
+							<p class="mt-4">
+								Under Prof. Xuhong Zhang, developed GAN and Cycle GAN for Whole Slide Images on High-Performance Computing Systems.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">June 2023 - July 2023</span>
+							<h2>Graduate Researcher - Vehicle Autonomy Intelligence Lab (VAIL)</h2>
+							<span class="position">Luddy School of Informatics, Computing, and Engineering, Indiana University</span>
+							<p class="mt-4">
+								Under Prof. Lantao Liu, researched Deep Learning techniques for autonomous robot navigation and trained the DAgger algorithm.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<h1 class="big-4">Teaching Experience</h1>
+					<div class="underline"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">Spring 2023, 2024 </span>
+							<h2>Associate Instructor</h2>
+							<span class="position">Luddy School of Informatics, Computing, and Engineering, Indiana University</span>
+							<p class="mt-4">
+								Conducted labs, graded assignments, and addressed student queries for Embedded Systems course under Prof. Himebaugh Bryce.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">Fall 2023</span>
+							<h2>Associate Instructor</h2>
+							<span class="position">Luddy School of Informatics, Computing, and Engineering, Indiana University</span>
+							<p class="mt-4">
+								Graded assignments and answered students' queries for Machine Learning in Bioinformatics course under Prof. Rui Zhu.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2024</span>
+    					<h2>Masters in Data Science</h2>
+    					<span class="position">Indiana University Bloomington</span>
+    					<p class="mt-4">Grade: 3.68/4.00</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2023</span>
+    					<h2 style="font-size: 25px;">Post-Graduation in Machine Learning</h2>
+
+    					<span class="position">The University of Texas at Austin </span>
+    					<p class="mt-4">Grade: 4.00/4.33 </p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelors in Electronics and Communication Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: 3.76/4.00 (71.27%)</p>
+    				</div>
+    			</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1_nvNo78oaYTJu4ZDQEeRqMCinY5mOSL1/view" 
+                    
+                    <<a href="#" class="btn btn-primary py-4 px-5" style="font-size: 16px; text-transform: none;">Download CV</a>
+
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Find a few of my interesting projects below :)</p>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/divyadhaipulle09/COVID-19-Sentiment-Analysis" class="block-20 zoom-effect" style="background-image: url('images/COVID-19.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/divyadhaipulle09/COVID-19-Sentiment-Analysis/blob/main/Covid%20Sentiment%20Analysis%20-%20Paper%203-Copy8.ipynb"> COVID-19 Sentiment Analysis</h3>
+            <p>Description: Exploring the Sentiment of COVID-19 Related Tweets: A Study of Twitter Discourse During the Pandemic.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/divyadhaipulle09/Employee-Turnover---Analysation-Visualization-and-Prediction, title is Employee-Turnover---Analysation-Visualization-and-Prediction" class="block-20 zoom-effect" style="background-image: url('images/turnover.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/divyadhaipulle09/Employee-Turnover---Analysation-Visualization-and-Prediction/blob/main/Final%20Employee%20Turnover%20%E2%80%93%20Analyzation%2C%20Visualization%20and%20Prediction%20-%20Divya%20Dhaipullay-Copy2.ipynb">Employee Turnover-Analysation, Visualization and Prediction</a></h3>
+            <p>Description: Predicting what major factors generally contribute to employee turnover. This project also aims at providing retention plan to enhance the business growth.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="https://github.com/divyadhaipulle09/Applied-Stats-Project" class="block-20 zoom-effect" style="background-image: url('images/team.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading"><a href="https://github.com/divyadhaipulle09/Applied-Stats-Project/blob/main/AppliedStatistics_DivyaDhaipullay%20(1).ipynb">Team Performance Analytics</a></h3>
+            <p>Description: Performing detailed statistical analysis and EDA to recommend high-potential teams for successful deals. Providing suggestions for enhancing data quality and analysis efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</section>
+
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/divyadhaipulle09/Social-Media-Mining" class="block-20 zoom-effect" style="background-image: url('images/bard sentiment_analysis.jpg');">
+</a>
+
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/divyadhaipulle09/Social-Media-Mining/blob/main/Sentiment%20Analysis%20-%20Google%20Bard's%20Accurcay-Copy1.ipynb">Public Sentiment on Bard's Accuracy Reputation</a></h3>
+				  <p>Description: Analysing public sentiment toward Bard's accuracy reputation after a single incorrect response to a factual query. Through sentiment analysis, 
+                  it investigates the fallout and implications of this misstep on Bard's perceived reliability.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/divyadhaipulle09/Zomato-Restaurant-Analysis-in-Bangalore" class="block-20 zoom-effect" style="background-image: url('images/Zomato.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/divyadhaipulle09/Zomato-Restaurant-Analysis-in-Bangalore/blob/main/EDA%20Final.ipynb">
+                  Zomato Restaurant Analysis in Bangalore
+</a></h3>
+				  <p>Description:  Analysing Bengaluru's restaurant landscape, revealing a clustering of North Indian eateries linked to local demographics, underscoring the dominance 
+                  of home delivery services and the scarcity of veg-only restaurants, offering valuable insights for restaurateurs.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+	  <div class="container">
+		<div class="row d-md-flex align-items-center">
+		  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			<div class="block-18">
+			  <div class="text flip-card" onclick="this.classList.toggle('flipped')">
+				<div class="flip-card-inner">
+				  <div class="flip-card-front">
+					<strong class="number" data-number="4">0</strong>
+					<span>Achievements</span>
+				  </div>
+				  <div class="flip-card-back">
+					<ol>
+					  
+					  <li>Employee of the Quarter, Tata Elxsi, October 2018</li>
+					  <li>Best Trainee, Tata Elxsi, September 2018</li>
+					  <li>Awarded full scholarship for entire 4 years on Merit in Undergrad</li>
+					  <li>Merit Scholarship for PG Program in ML</li>
+					</ol>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="35">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="250">0</strong>
+                <span>Mentoring </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2 style="font-family: 'DejaVu Sans Mono', monospace;">To find all my projects please visit<span style="font-family: 'DejaVu Sans Mono', monospace;"> Github  </span> </h2>
+						<div class="heading"> <h4> 
+I'm passionate about delving into complex data to uncover valuable insights and solve real-world challenges.</h4>
+						<br>
+						<p><a href="https://github.com/divyadhaipulle09" class="btn btn-primary py-3 px-5" style="background-color: white;">GitHub</a></p>
+
+
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Reach me out!!! </h2>
+            <p>I am available!!!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+	            <p>Bloomington, Indiana</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+				<p><a href="tel://8125433634" style="font-family: 'DejaVu Sans Mono', monospace;">812-543-3634</a></p>
+
+	          </div>
+          </div>
+         <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+				<h3 class="mb-4" style="text-transform: none; font-family: 'DejaVu Sans Mono', monospace;">
+  <a href="mailto:divyadhaipulle@gmail.com style="font-family: 'DejaVu Sans Mono', monospace;">divyadhaipulle@gmail.com</a>
+</h3>
+
+	          </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+				<h3 class="mb-4" style="text-transform: none; font-family: 'DejaVu Sans Mono', monospace;"><a href="https://drive.google.com/file/d/1_nvNo78oaYTJu4ZDQEeRqMCinY5mOSL1/view" style="font-family: 'DejaVu Sans Mono', monospace;">Download Resume</a></h3><p id="resumeLink" onclick="this.style.display='none'; document.getElementById('downloadLink').style.display='block';" style="display: none; font-family: 'DejaVu Sans Mono', monospace;"><a href="https://drive.google.com/file/d/1_nvNo78oaYTJu4ZDQEeRqMCinY5mOSL1/view" style="font-family: 'DejaVu Sans Mono', monospace;">Download</a></p><p id="downloadLink" style="display: none; font-family: 'DejaVu Sans Mono', monospace;"><a href="https://drive.google.com/file/d/1_nvNo78oaYTJu4ZDQEeRqMCinY5mOSL1/view" style="font-family: 'DejaVu Sans Mono', monospace;">Download</a></p>
+
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Your feedback is invaluable :)<span> </span> <a href="" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://medium.com/@divyadhaipulle"><span class="icon-medium"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/divya-dhaipulle//"><span class="icon-linkedin"></span></a></li>  
+					 
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
